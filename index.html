@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <a class="logo" href="#">
+        <a class="logo" href="top">
             Pixel&Code<span class="logo-dot">.</span>
         </a>
 
@@ -29,6 +29,13 @@
             <a href="#faq">FAQ</a>
             <a href="#contact" class="header-button">Обсудить проект</a>
         </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
     </header>
 
     <main>
@@ -97,7 +104,7 @@
         </section>
 
        
-        <section class="cards-section">
+        <section class="cards-section" id="case">
 
             <div class="cards-title">
 
@@ -205,8 +212,117 @@
 
         </section>
 
+        <section class="faq-section" id="faq">
+
+            <div class="faq-title">
+                <p class="faq-label">FAQ</p>
+                <h2 class="faq-heading">Частые вопросы</h2>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Сколько времени занимает разработка?</summary>
+                    <p class="faq-answer">Пашок, в монополии горшок</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Можно ли адаптировать сайт под телефон?</span>
+                    </summary>
+                    <p class="faq-answer">Сашок, в монополии горшок</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Смогу ли я менять содержимое сайта?</span>
+                    </summary>
+                    <p class="faq-answer">Пашок, в монополии горшок</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Что будет после запуска?</span>
+                    </summary>
+                    <p class="faq-answer">Сашок, в монополии горшок</p>
+                </details>
+            </div>
+        
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Обсудим Ваш проект?</h2>
+                    <p>Расскажите об идее, ответим в течение рабочего дня и предложим формат работы.</p>
+                </div>
+
+                <form class="contact-form">
+
+                    <div class="contact-fields">
+
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@company.ru" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">О проекте</label>
+                            <textarea name="message" id="message" placeholder="Коротко опишите задачу" rows="5" required></textarea>
+                        </div>
+
+                    </div>
+
+                    <button type="submit">Оставить заявку</button>
+
+                </form>
+            </div>
+        </section>
+
 
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            
+            <div class="footer-brand">
+                <p class="footer-logo">Pixel&Code<span>.</span></p>
+                <p class="footer-description">Помогаем компаниям развивать бизнес в интернете.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h3>Навигация</h3>
+                <a class="footer-link" href="#service">Услуги</a>
+                <a class="footer-link" href="#case">Кейсы</a>
+                <a class="footer-link" href="#tariff">Тарифы</a>
+            </div>
+
+            <div class="footer-contacts">
+                <h3>Контакты</h3>
+                <a class="footer-link" href="mailto:dane4ka007@mail.ru">dane4ka007@mail.ru</a>
+                <a class="footer-link" href="tel:+79150995262">8 800 555-35-35</a>
+            </div>
+
+            <div class="footer-awards">
+                <h3>Премии</h3>
+                <p>ALAEvRecords</p>
+                <p>ТохаГандон2025</p>
+                <p>БусяЧипинкос</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Pixel&Code. Все права защищены.</p>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#top">Наверх</a>
+        </div>
+
+    </footer>
 
 </body>
 </html>
